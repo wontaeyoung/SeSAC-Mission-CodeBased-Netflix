@@ -39,3 +39,6 @@ extension NSObject: Configurator { }
 extension Array: Configurator { }
 extension Dictionary: Configurator { }
 extension Set: Configurator { }
+
+extension UIButton.Configuration: Configurator { }
+extension AttributeContainer: Configurator { }

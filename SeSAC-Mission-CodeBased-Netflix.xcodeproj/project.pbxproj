@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6E0A84CE2B6388A3009F05F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A84CD2B6388A3009F05F6 /* AppDelegate.swift */; };
 		6E0A84D02B6388A3009F05F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A84CF2B6388A3009F05F6 /* SceneDelegate.swift */; };
-		6E0A84D22B6388A3009F05F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A84D12B6388A3009F05F6 /* ViewController.swift */; };
 		6E0A84D72B6388A4009F05F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A84D62B6388A4009F05F6 /* Assets.xcassets */; };
 		6E0A84DA2B6388A4009F05F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A84D82B6388A4009F05F6 /* LaunchScreen.storyboard */; };
 		6E0A84E22B6388B3009F05F6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A84E12B6388B3009F05F6 /* README.md */; };
@@ -21,13 +20,17 @@
 		6E0A84FC2B6390DA009F05F6 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A84F52B6390DA009F05F6 /* BaseCollectionViewCell.swift */; };
 		6E0A85022B6398E7009F05F6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A85012B6398E7009F05F6 /* MainTabBarController.swift */; };
 		6E0A85042B639938009F05F6 /* MainTabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A85032B639938009F05F6 /* MainTabBarPage.swift */; };
+		6E0A85072B639D3E009F05F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A85062B639D3E009F05F6 /* HomeViewController.swift */; };
+		6E0A85092B639E4F009F05F6 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A85082B639E4F009F05F6 /* UIView+.swift */; };
+		6E0A850C2B63A35B009F05F6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E0A850B2B63A35B009F05F6 /* SnapKit */; };
+		6E0A850E2B63A35B009F05F6 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6E0A850D2B63A35B009F05F6 /* SnapKit-Dynamic */; };
+		6E0A85102B63B23F009F05F6 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A850F2B63B23F009F05F6 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E0A84CA2B6388A3009F05F6 /* SeSAC-Mission-CodeBased-Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC-Mission-CodeBased-Netflix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0A84CD2B6388A3009F05F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E0A84CF2B6388A3009F05F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E0A84D12B6388A3009F05F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E0A84D62B6388A4009F05F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E0A84D92B6388A4009F05F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E0A84DB2B6388A4009F05F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		6E0A84F52B6390DA009F05F6 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		6E0A85012B6398E7009F05F6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6E0A85032B639938009F05F6 /* MainTabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarPage.swift; sourceTree = "<group>"; };
+		6E0A85062B639D3E009F05F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6E0A85082B639E4F009F05F6 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		6E0A850F2B63B23F009F05F6 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0A850C2B63A35B009F05F6 /* SnapKit in Frameworks */,
+				6E0A850E2B63A35B009F05F6 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +81,9 @@
 		6E0A84CC2B6388A3009F05F6 /* SeSAC-Mission-CodeBased-Netflix */ = {
 			isa = PBXGroup;
 			children = (
-				6E0A84E82B63906C009F05F6 /* Utility */,
 				6E0A84E32B6389C1009F05F6 /* App */,
 				6E0A84E52B638A15009F05F6 /* Presenter */,
+				6E0A84E82B63906C009F05F6 /* Utility */,
 			);
 			path = "SeSAC-Mission-CodeBased-Netflix";
 			sourceTree = "<group>";
@@ -87,6 +95,7 @@
 				6E0A84CF2B6388A3009F05F6 /* SceneDelegate.swift */,
 				6E0A84D62B6388A4009F05F6 /* Assets.xcassets */,
 				6E0A84DB2B6388A4009F05F6 /* Info.plist */,
+				6E0A84D82B6388A4009F05F6 /* LaunchScreen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -96,8 +105,6 @@
 			children = (
 				6E0A84EF2B6390DA009F05F6 /* Base */,
 				6E0A85002B6398CD009F05F6 /* TabBar */,
-				6E0A84D82B6388A4009F05F6 /* LaunchScreen.storyboard */,
-				6E0A84D12B6388A3009F05F6 /* ViewController.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				6E0A84ED2B639096009F05F6 /* Configurator+.swift */,
+				6E0A85082B639E4F009F05F6 /* UIView+.swift */,
+				6E0A850F2B63B23F009F05F6 /* String+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -135,8 +144,17 @@
 			children = (
 				6E0A85012B6398E7009F05F6 /* MainTabBarController.swift */,
 				6E0A85032B639938009F05F6 /* MainTabBarPage.swift */,
+				6E0A85052B639D2A009F05F6 /* Home */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6E0A85052B639D2A009F05F6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A85062B639D3E009F05F6 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +173,10 @@
 			dependencies = (
 			);
 			name = "SeSAC-Mission-CodeBased-Netflix";
+			packageProductDependencies = (
+				6E0A850B2B63A35B009F05F6 /* SnapKit */,
+				6E0A850D2B63A35B009F05F6 /* SnapKit-Dynamic */,
+			);
 			productName = "SeSAC-Mission-CodeBased-Netflix";
 			productReference = 6E0A84CA2B6388A3009F05F6 /* SeSAC-Mission-CodeBased-Netflix.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +205,9 @@
 				Base,
 			);
 			mainGroup = 6E0A84C12B6388A3009F05F6;
+			packageReferences = (
+				6E0A850A2B63A35B009F05F6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 6E0A84CB2B6388A3009F05F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,15 +235,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0A85092B639E4F009F05F6 /* UIView+.swift in Sources */,
 				6E0A84FB2B6390DA009F05F6 /* BaseTableViewController.swift in Sources */,
 				6E0A84FA2B6390DA009F05F6 /* BaseTableViewCell.swift in Sources */,
 				6E0A85022B6398E7009F05F6 /* MainTabBarController.swift in Sources */,
 				6E0A84EE2B639096009F05F6 /* Configurator+.swift in Sources */,
 				6E0A85042B639938009F05F6 /* MainTabBarPage.swift in Sources */,
-				6E0A84D22B6388A3009F05F6 /* ViewController.swift in Sources */,
 				6E0A84FC2B6390DA009F05F6 /* BaseCollectionViewCell.swift in Sources */,
 				6E0A84CE2B6388A3009F05F6 /* AppDelegate.swift in Sources */,
+				6E0A85072B639D3E009F05F6 /* HomeViewController.swift in Sources */,
 				6E0A84D02B6388A3009F05F6 /* SceneDelegate.swift in Sources */,
+				6E0A85102B63B23F009F05F6 /* String+.swift in Sources */,
 				6E0A84F92B6390DA009F05F6 /* BaseViewController.swift in Sources */,
 				6E0A84F72B6390DA009F05F6 /* BaseCollectionViewController.swift in Sources */,
 			);
@@ -431,6 +458,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E0A850A2B63A35B009F05F6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E0A850B2B63A35B009F05F6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E0A850A2B63A35B009F05F6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		6E0A850D2B63A35B009F05F6 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E0A850A2B63A35B009F05F6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E0A84C22B6388A3009F05F6 /* Project object */;
 }

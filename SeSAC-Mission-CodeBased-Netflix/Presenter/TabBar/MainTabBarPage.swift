@@ -56,6 +56,19 @@ enum MainTabBarPage: Int, CaseIterable {
     }
   }
   
+  var rootViewController: BaseViewController {
+    switch self {
+      case .home:
+        return HomeViewController()
+        
+      case .search:
+        return BaseViewController()
+        
+      case .save:
+        return BaseViewController()
+    }
+  }
+  
   var tabBarItem: UITabBarItem {
     return UITabBarItem(title: title, image: icon, selectedImage: selectedIcon)
   }

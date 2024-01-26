@@ -16,8 +16,10 @@ final class MainTabBarController: UITabBarController {
   }
   
   private func configureTabBar() {
-    let rootControllers: [UINavigationController] = MainTabBarPage.allCases.map { page in
-      return UINavigationController().configured { $0.tabBarItem = page.tabBarItem }
+    let rootControllers = MainTabBarPage.allCases.map { page in
+      return UINavigationController(rootViewController: page.rootViewController).configured {
+        $0.tabBarItem = page.tabBarItem
+      }
     }
     
     self.setViewControllers(rootControllers, animated: true)
