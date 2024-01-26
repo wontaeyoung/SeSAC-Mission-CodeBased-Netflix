@@ -10,6 +10,7 @@ import SnapKit
 
 final class SearchViewController: BaseViewController {
   
+  // MARK: - UI
   private let searchBar = UISearchBar().configured {
     $0.placeholder = "게임, 시리즈, 영화를 검색하세요..."
     $0.autocorrectionType = .no
@@ -55,8 +56,23 @@ final class SearchViewController: BaseViewController {
   
   private lazy var filterButtons: [UIButton] = [toBeReleasedButton, popularContentButton, top10Button]
   
+  private let noResultTitleLabel = UILabel().configured {
+    $0.text = "이런! 찾으시는 작품이 없습니다."
+    $0.font = .boldSystemFont(ofSize: 28)
+    $0.textAlignment = .center
+  }
+  
+  private let noResultDescriptionLabel = UILabel().configured {
+    $0.text = "다른 영화, 시리즈, 배우, 감독 또는 장르를 검색해보세요."
+    $0.font = .systemFont(ofSize: 17)
+    $0.textAlignment = .center
+    $0.textColor = .gray
+  }
+  
+  
+  // MARK: - Method
   override func setHierarchy() {
-    view.addSubviews(searchBar, toBeReleasedButton, popularContentButton, top10Button)
+    view.addSubviews(searchBar, toBeReleasedButton, popularContentButton, top10Button, noResultTitleLabel, noResultDescriptionLabel)
   }
   
   override func setAttribute() {
@@ -65,6 +81,8 @@ final class SearchViewController: BaseViewController {
     filterButtons.forEach {
       $0.addTarget(self, action: #selector(filterButtonTapped), for: .touchUpInside)
     }
+    
+    toggleButtonsColor(sender: toBeReleasedButton)
   }
   
   override func setConstraint() {
@@ -87,6 +105,16 @@ final class SearchViewController: BaseViewController {
       $0.top.equalTo(searchBar.snp.bottom).offset(10)
       $0.leading.equalTo(popularContentButton.snp.trailing)
       $0.trailing.equalToSuperview()
+    }
+    
+    noResultTitleLabel.snp.makeConstraints {
+      $0.centerY.equalToSuperview().offset(-40)
+      $0.horizontalEdges.equalToSuperview()
+    }
+    
+    noResultDescriptionLabel.snp.makeConstraints {
+      $0.top.equalTo(noResultTitleLabel.snp.bottom).offset(10)
+      $0.horizontalEdges.equalToSuperview()
     }
   }
   
