@@ -25,7 +25,7 @@ final class SearchViewController: BaseViewController {
       $0.cornerStyle = .capsule
       $0.baseBackgroundColor = .systemBackground
     }
-      .titleAttributed(with: "공개 예정", font: .boldSystemFont(ofSize: 13))
+    .titleAttributed(with: "공개 예정", font: .boldSystemFont(ofSize: 13))
   }
   
   private let popularContentButton = UIButton().configured { button in
@@ -35,7 +35,7 @@ final class SearchViewController: BaseViewController {
       $0.cornerStyle = .capsule
       $0.baseBackgroundColor = .systemBackground
     }
-      .titleAttributed(with: "모두의 인기 콘텐츠", font: .boldSystemFont(ofSize: 13))
+    .titleAttributed(with: "모두의 인기 콘텐츠", font: .boldSystemFont(ofSize: 13))
   }
   
   private let top10Button = UIButton().configured { button in
@@ -45,7 +45,7 @@ final class SearchViewController: BaseViewController {
       $0.cornerStyle = .capsule
       $0.baseBackgroundColor = .systemBackground
     }
-      .titleAttributed(with: "TOP 10 시리즈", font: .boldSystemFont(ofSize: 13))
+    .titleAttributed(with: "TOP 10 시리즈", font: .boldSystemFont(ofSize: 13))
   }
   
   private lazy var filterButtons: [UIButton] = [toBeReleasedButton, popularContentButton, top10Button]

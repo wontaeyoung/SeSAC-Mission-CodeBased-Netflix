@@ -32,7 +32,7 @@ final class HomeViewController: BaseViewController {
       $0.baseForegroundColor = .systemBackground
       $0.baseBackgroundColor = .label
     }
-      .titleAttributed(with: "재생", font: .systemFont(ofSize: 13, weight: .semibold))
+    .titleAttributed(with: "재생", font: .systemFont(ofSize: 13, weight: .semibold))
   }
   
   private let addWishListButton = UIButton().configured { button in
@@ -42,7 +42,7 @@ final class HomeViewController: BaseViewController {
       $0.baseForegroundColor = .label
       $0.baseBackgroundColor = .darkGray
     }
-      .titleAttributed(with: "내가 찜한 리스트", font: .systemFont(ofSize: 13, weight: .semibold))
+    .titleAttributed(with: "내가 찜한 리스트", font: .systemFont(ofSize: 13, weight: .semibold))
   }
   
   private let popularNowInfoLabel = UILabel().configured {
