@@ -26,27 +26,23 @@ final class HomeViewController: BaseViewController {
   }
   
   private let playButton = UIButton().configured { button in
-    let config = UIButton.Configuration.filled().configured {
-      $0.attributedTitle = "재생".buttonFontConfigured(font: .systemFont(ofSize: 13, weight: .semibold))
+    button.configuration = UIButton.Configuration.filled().configured {
       $0.image = .play
       $0.imagePadding = 10
       $0.baseForegroundColor = .systemBackground
       $0.baseBackgroundColor = .label
     }
-    
-    button.configuration = config
+      .titleAttributed(with: "재생", font: .systemFont(ofSize: 13, weight: .semibold))
   }
   
   private let addWishListButton = UIButton().configured { button in
-    let config = UIButton.Configuration.filled().configured {
-      $0.attributedTitle = "내가 찜한 리스트".buttonFontConfigured(font: .systemFont(ofSize: 13, weight: .semibold))
+    button.configuration = UIButton.Configuration.filled().configured {
       $0.image = UIImage(systemName: "plus")
       $0.imagePadding = 10
       $0.baseForegroundColor = .label
       $0.baseBackgroundColor = .darkGray
     }
-    
-    button.configuration = config
+      .titleAttributed(with: "내가 찜한 리스트", font: .systemFont(ofSize: 13, weight: .semibold))
   }
   
   private let popularNowInfoLabel = UILabel().configured {

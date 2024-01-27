@@ -18,40 +18,34 @@ final class SearchViewController: BaseViewController {
     $0.spellCheckingType = .no
   }
   
-  private let toBeReleasedButton = UIButton().configured {
-    let config = UIButton.Configuration.filled().configured {
-      $0.attributedTitle = "공개 예정".buttonFontConfigured(font: .boldSystemFont(ofSize: 13))
+  private let toBeReleasedButton = UIButton().configured { button in
+    button.configuration = UIButton.Configuration.filled().configured {
       $0.image = .blue
       $0.imagePadding = 3
       $0.cornerStyle = .capsule
       $0.baseBackgroundColor = .systemBackground
     }
-    
-    $0.configuration = config
+      .titleAttributed(with: "공개 예정", font: .boldSystemFont(ofSize: 13))
   }
   
-  private let popularContentButton = UIButton().configured {
-    let config = UIButton.Configuration.filled().configured {
-      $0.attributedTitle = "모두의 인기 콘텐츠".buttonFontConfigured(font: .boldSystemFont(ofSize: 13))
+  private let popularContentButton = UIButton().configured { button in
+    button.configuration = UIButton.Configuration.filled().configured {
       $0.image = .turquoise
       $0.imagePadding = 3
       $0.cornerStyle = .capsule
       $0.baseBackgroundColor = .systemBackground
     }
-    
-    $0.configuration = config
+      .titleAttributed(with: "모두의 인기 콘텐츠", font: .boldSystemFont(ofSize: 13))
   }
   
-  private let top10Button = UIButton().configured {
-    let config = UIButton.Configuration.filled().configured {
-      $0.attributedTitle = "TOP 10 시리즈".buttonFontConfigured(font: .boldSystemFont(ofSize: 13))
+  private let top10Button = UIButton().configured { button in
+    button.configuration = UIButton.Configuration.filled().configured {
       $0.image = .pink
       $0.imagePadding = 3
       $0.cornerStyle = .capsule
       $0.baseBackgroundColor = .systemBackground
     }
-    
-    $0.configuration = config
+      .titleAttributed(with: "TOP 10 시리즈", font: .boldSystemFont(ofSize: 13))
   }
   
   private lazy var filterButtons: [UIButton] = [toBeReleasedButton, popularContentButton, top10Button]
@@ -72,7 +66,12 @@ final class SearchViewController: BaseViewController {
   
   // MARK: - Method
   override func setHierarchy() {
-    view.addSubviews(searchBar, toBeReleasedButton, popularContentButton, top10Button, noResultTitleLabel, noResultDescriptionLabel)
+    view.addSubviews(
+      searchBar,
+      toBeReleasedButton, popularContentButton, top10Button,
+      noResultTitleLabel, 
+      noResultDescriptionLabel
+    )
   }
   
   override func setAttribute() {

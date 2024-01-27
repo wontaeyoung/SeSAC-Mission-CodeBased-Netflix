@@ -62,7 +62,7 @@ enum MainTabBarPage: Int, CaseIterable {
         return HomeViewController()
         
       case .search:
-        return BaseViewController()
+        return SearchViewController()
         
       case .save:
         return BaseViewController()
