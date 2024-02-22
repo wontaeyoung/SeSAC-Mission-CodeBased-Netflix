@@ -23,7 +23,7 @@ final class MainTabBarController: UITabBarController {
     }
     
     self.setViewControllers(rootControllers, animated: true)
-    self.selectedIndex = MainTabBarPage.home.index
+    self.selectedIndex = MainTabBarPage.login.index
     self.tabBar.tintColor = .label
   }
 }

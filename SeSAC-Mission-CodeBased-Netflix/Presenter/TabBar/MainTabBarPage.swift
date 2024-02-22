@@ -9,7 +9,8 @@ import UIKit
 
 enum MainTabBarPage: Int, CaseIterable {
   
-  case home = 0
+  case login
+  case home
   case search
   case save
   
@@ -19,6 +20,9 @@ enum MainTabBarPage: Int, CaseIterable {
   
   var title: String {
     switch self {
+      case .login:
+        return "로그인"
+        
       case .home:
         return "홈"
         
@@ -32,6 +36,9 @@ enum MainTabBarPage: Int, CaseIterable {
   
   var icon: UIImage? {
     switch self {
+      case .login:
+        return UIImage(systemName: "person")
+        
       case .home:
         return UIImage(systemName: "house")
         
@@ -45,6 +52,9 @@ enum MainTabBarPage: Int, CaseIterable {
   
   var selectedIcon: UIImage? {
     switch self {
+      case .login:
+        return UIImage(systemName: "person.fill")
+        
       case .home:
         return UIImage(systemName: "house.fill")
         
@@ -58,6 +68,9 @@ enum MainTabBarPage: Int, CaseIterable {
   
   var rootViewController: BaseViewController {
     switch self {
+      case .login:
+        return LoginViewController()
+        
       case .home:
         return HomeViewController()
         
